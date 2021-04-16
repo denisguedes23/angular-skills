@@ -1,3 +1,15 @@
 .example-card {
     max-width: 400px;
   }
+
+  .linha-selecao-like {
+    background-color: #1e94d2 !important;
+    color: #FFF !important;
+    font-weight: 600;
+}
+
+.linha-selecao-likes {
+  background-color: #2E8B57 !important;
+  color: #FFF !important;
+  font-weight: 600;
+}

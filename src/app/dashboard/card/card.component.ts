@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -8,17 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() card;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   onLike(card: any){
-    // TODO: incrementar o like, salvar via rest
+    card.likes += 1;
   }
 
-  onShare(card: any){
-    // TODO: abrir o link do seu linkedin
+  onShare(){
+    window.open('https://www.linkedin.com/in/denis-guedes-b42b20aa/', "_blank");
   }
 
 }
