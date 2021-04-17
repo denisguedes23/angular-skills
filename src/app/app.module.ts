@@ -7,13 +7,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppComponent } from './app.component';
-import { CardComponent } from './dashboard/card/card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FakeApiService } from './fake-api.service';
 import { HelloComponent } from './hello.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterModule } from '@angular/router';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CardComponent } from './dashboard/card/componente/card.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule, MatGridListModule, RouterModule.forRoot([]), MatButtonModule, MatProgressSpinnerModule, MatChipsModule, MatCardModule, HttpClientModule, FlexLayoutModule, InMemoryWebApiModule.forRoot(FakeApiService, {delay: 5000}) ],
